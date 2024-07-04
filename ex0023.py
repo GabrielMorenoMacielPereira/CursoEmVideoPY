@@ -1,0 +1,12 @@
+#Dessa forma, caso eu insira um número com menos de 4 números dá errado
+#numero=input('Digite um número de 0 a 9999: ')
+#print(f'A unidade desse número é: {numero[3]}')
+#print(f'A dezena desse número é: {numero[2]}')
+#print(f'A centena desse número é: {numero[1]}')
+#print(f'O milhar desse número é: {numero[0]}')
+numero = int(input('Digite um número de 0 a 9999: '))
+print(f'Analisando o numero {numero}')
+print(f'A unidade desse número é: {numero//1%10}')
+print(f'A dezena desse número é: {numero//10%10}')
+print(f'A centena desse número é: {numero//100%10}')
+print(f'O milhar desse número é: {numero//1000%10}')
